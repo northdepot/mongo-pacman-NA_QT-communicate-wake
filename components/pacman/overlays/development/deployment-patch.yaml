@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: pacman
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/jduimovich0/pacman-frontend@sha256:e66fad694d88ccd76d92980074e8e5b9bb1b1d5a43d9b7dedf1b771816ab9069
+        name: container-image
+        resources: {}
+status: {}
